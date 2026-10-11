@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu | H-COOK</title>
+
+    <!--pour importer les icones utiliser-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--Mes fichier css-->
+    <link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="allpage.css">
+	
+
+</head>
+<body>
+
+    <!--Header-->
+	<header>
+		<div class="header">
+			<div class="headerbar">
+				<div class="account">
+					<ul>
+						<a href="#">
+							<li>
+								<i class="fa-solid fa-house-chimney"></i>
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								<i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
+							</li>
+						</a>
+						<div class="search" id="searchinput1">
+							<input type="search">
+							<i class="fa-solid fa-magnifying-glass srchicon"></i>
+						</div>
+						<a href="#">
+							<li>
+								<i class="fa-solid fa-user" id="user-mb"></i>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<div class="nav">
+					<ul>
+						<a href="index.html">
+							<li>HOME</li>
+						</a>
+						<a href="about.html">
+							<li>About</li>
+						</a>
+						<a href="menu.html">
+							<li>MENU</li>
+						</a>
+						<a href="booking.html">
+							<li>BOOK TABLE</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<div class="logo">
+				<img src="images/chef cook 2.png 2.png" alt="">
+			</div>
+
+			<div class="bar">
+				<i class="fa-solid fa-bars" ></i>
+				<i class="fa-solid fa-xmark" id="hdcross"></i>
+			</div>
+
+			<div class="nav">
+				<ul>
+					<a href="index.html">
+						<li>HOME</li>
+					</a>
+					<a href="about.html">
+						<li>ABOUT</li>
+					</a>
+					<a href="menu.html">
+						<li>MENU</li>
+					</a>
+					<a href="booking.html">
+						<li>BOOK TABLE</li>
+					</a>
+				</ul>
+			</div>
+			<div class="account">
+				<ul>
+					<a href="index.html">
+						<li>
+							<i class="fa-solid fa-house-chimney"></i>
+						</li>
+					</a>
+					<a href="menu.css">
+						<li>
+							<i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
+						</li>
+					</a>
+					<div class="search" id="searchinput2">
+						<input type="search">
+						<i class="fa-solid fa-magnifying-glass srchicon"></i>
+					</div>
+					<a href="#">
+						<li>
+							<i class="fa-solid fa-user" id="user-lap"></i>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</header>
+      <!-- End Header -->
+    
+      <!-- Offers Section Start -->
+        <section id="offers">
+            <div class="container2">
+                <div class="title">
+                    <h2>Our Special Offers</h2>
+                </div>
+                <div class="offers-items">
+                    <div id="divfood">
+                        <img src="images/plat2.jpg" alt="food img">
+                        <div>
+                            <h3>Kabab</h3>
+                            <p>Main Meal | Family Meal.</p>
+                            <p><del>5500Da</del> <span class="primary-text">4000Da</span></p>
+                        </div>
+                        <div>
+                        	<div class="stars">
+                        		<i class="fa-solid fa-star"></i>
+                        		<i class="fa-solid fa-star"></i>
+                        		<i class="fa-solid fa-star"></i>
+                        		<i class="fa-solid fa-star"></i>
+                        		<i class="fa-solid fa-star"></i>
+                        		<!--<img src="images/5-stars.png">-->
+                        	</div>
+                        	<button onclick="window.location.href='ajouter_panier.php?id=<?=$row['id']?>';" class="red_btn">Buy Now</button>
+                        </div>
+                    </div>
+                    <div id="divfood">
+                    	<img src="images/plat3.jpg" alt="food">
+                    	<div>
+                    		<h3>Cote de Boeuf</h3>
+                    		<p>Main Meal | Single Meal</p>
+                    		<p><del>2900Da</del> <span class="primary-text">2000Da</span></p>
+                    	</div>
+                    	<div>
+                    		<div class="stars">
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-regular fa-star"></i>
+                    			<!--<img src="images/5-stars.png">-->
+                    		</div>
+                    		<button onclick="window.location.href='ajouter_panier.php?id=<?=$row['id']?>';" class="red_btn">Buy Now</button>
+                    	</div>
+                    </div>
+                    <div id="divfood">
+                    	<img src="images/plat6.jpg" alt="food">
+                    	<div>
+                    		<h3>Burger</h3>
+                    		<p>Main Meal | Single Meal.</p>
+                    		<p><del>1500Da</del> <span class="primary-text">700Da</span></p>
+                    	</div>
+                    	<div> 
+                    		<div class="stars">
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<i class="fa-solid fa-star"></i>
+                    			<!--<img src="images/5-stars.png">-->
+                    		</div>
+                    		<button onclick="window.location.href='ajouter_panier.php?id=<?=$row['id']?>';" class="red_btn">Buy Now</button>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Section End -->
+
+        <!-- Our Menu -->
+        <div class="main">
+        	<div class="title">
+        		<h3>Our Menu</h3>
+        		<p>H-COOK are now open at full capacity, including table meals, takeout, and custom pre-ordered meals available for pickup.</p>
+        	</div>
+        	<hr>
+        	<div class="list">
+        		<li data-filter=".All" class="active">All</li> <!-- la classe active est dans all psq au debut le filtrage es all(tout le menu)-->
+        		<li data-filter=".Appetizers">Appetizers</li>
+        		<li data-filter=".Main Meal">Main Meal</li>
+        		<li data-filter=".Dessert">Dessert</li>
+        	</div>
+        	<hr>
+        	<div class="content">
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat13.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Tadjine</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat12.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Couscous</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat3.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Cote</h3>
+        				<hr>
+        				<section id="sect2">2900Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/item3.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Cou D'agneau</h3>
+        				<hr>
+        				<section id="sect2">5900Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+        		<div class="box All Appetizers">
+        			<div class="image">
+        				<img src="images/plat21.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Bourek</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Appetizers</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Appetizers">
+        			<div class="image">
+        				<img src="images/plat20.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Salade</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Appetizers</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Dessert">
+        			<div class="image">
+        				<img src="images/plat22.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Cheescake</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Dessert</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+        		<div class="box All Dessert">
+        			<div class="image">
+        				<img src="images/plat23.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Tiramisu</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Dessert</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Dessert">
+        			<div class="image">
+        				<img src="images/plat11.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Waffles</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Dessert</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat14.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Sandwich</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat7.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Riz Sauce</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat9.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Margerita Pizza</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div><div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat5.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Fish</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Dessert">
+        			<div class="image">
+        				<img src="images/plat24.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Tiramisu Fraise</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Dessert</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+
+        		<div class="box All Main Meal">
+        			<div class="image">
+        				<img src="images/plat6.jpg">
+        			</div>
+        			<div class="text">
+        				<h3>Burger</h3>
+        				<hr>
+        				<section id="sect2">500Da</section>
+        				<div class="stars">
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-solid fa-star"></i>
+        					<i class="fa-regular fa-star"></i>
+        					<!--<img src="images/5-stars.png">-->
+        				</div>
+        				<article>Category: Main Meal</article>
+        			</div>
+        			<div class="panier">
+        				<a href="ajouter_panier.php?id=<?=$row['id']?>"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #ffa200;"></i></a>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="monpanier">
+        		<button onclick="window.location.href='panier.php';" class="red_btn">See My Basket <i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;"></i></button>
+        	</div>
+
+        </div>
+        <!-- End Our Menu -->
+     
+
+
+		 <!--start footer section-->
+		 <footer>
+			<div class="container">
+			  <div class="footer__wrapper">
+				<div class="footer__col1">
+				  <div class="footer__logo">
+					<img src="./images/chef cook 2.png 2.png" alt="H-CooK">
+				  </div>
+				  <p class="footer__desc">
+					HichamCook Chef & Influencer.
+				  </p>
+				  <div class="footer__socials">
+					<h4 class="footer__socials__title">Follow us</h4>
+					<ol class="footer__socials__list">
+					  <li>
+						<a href="https://instagram.com/hicham_cook?igshid=YmMyMTA2M2Y=">
+						  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 24" fill="none"
+							stroke="#5DA9F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="feather feather-facebook">
+							<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+						  </svg>
+						</a>
+					  </li>
+					  <li>
+						<a href="https://instagram.com/hicham_cook?igshid=YmMyMTA2M2Y=">
+						  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 24" fill="none"
+							stroke="#E4639F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="feather feather-instagram">
+							<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+						  </svg>
+						</a>
+					  </li>
+					  <li>
+						<a href="https://instagram.com/hicham_cook?igshid=YmMyMTA2M2Y=">
+						  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 24" fill="none"
+							stroke="lightblue" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="feather feather-twitter">
+							<path
+							  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+						  </svg>
+						</a>
+					  </li>
+					</ol>
+				  </div>
+				</div>
+				<div class="footer__col2">
+				  <h3 class="footer__text__title">
+					Links
+				  </h3>
+				  <ol class="footer__text">
+					<li>
+					  <a href="/index.html">Home</a>
+					</li>
+					<li>
+					  <a href="./menu.html">Menu</a>
+					</li>
+					<li>
+					  <a href="./booking.html">Book Table</a>
+					</li>
+					<li>
+					  <a href="./about.html">About Us</a>
+					</li>
+					<li>
+					  <a href="#">Privacy Policy</a>
+					</li>
+				  </ol>
+				</div>
+				<div class="footer__col3">
+				  <h3 class="footer__text__title">
+					Support
+				  </h3>
+				  <ol class="footer__text">
+					<li>
+					  <a href="https://instagram.com/hicham_cook?igshid=YmMyMTA2M2Y=">Contact</a>
+					</li>
+					<li>
+					  <a href="#">Support</a>
+					</li>
+					<li>
+					  <a href="#">Feedback</a>
+					</li>
+				  </ol>
+				</div>
+				<div class="footer__col4">
+				  <h3 class="footer__text__title">
+					Contact
+				  </h3>
+				  <ol class="footer__text">
+					<li>
+					  <a href="#">0541683219</a>
+					</li>
+					<li>
+					  <a href="#">H@gmail.com</a>
+					</li>
+					<li>
+					  <a href="https://maps.google.com/?cid=9352163040441892870&entry=gps">Domaine Kouchi Idir, Ouled Fayet</a>
+					</li>
+				  </ol>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+		  <div id="copyright">
+			<div class="container2">
+			  <p class="copyright__text">
+				© copyright 2023 H-CooK | All rights reserved
+			  </p>
+			</div>
+		  </div>
+	<!--end footer code-->
+
+<!--Mes fichier js-->
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
